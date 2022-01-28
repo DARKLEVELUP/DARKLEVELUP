@@ -1,7 +1,4 @@
--- BYPASS TP
-if game:GetService("Players").LocalPlayer.Character.Services:FindFirstChild("Client") then
-    game:GetService("Players").LocalPlayer.Character.Services["Client"].Disabled = true
-end
+
 
 
 local mobs = {} 
