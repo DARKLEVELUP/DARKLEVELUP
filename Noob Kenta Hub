@@ -35,11 +35,6 @@ end)
 
 -- KEY | HWID
 
-_G.Key = "KEY-A"
-
-
-HWID = "HELLO1"
-
 local Server =  http_request({
     Url = "http://127.0.0.1/Whitelist/Server.php?Key=NOOB-KENTA&HWID=HELLO".. _G.Key .."&HWID="..HWID,
     Method = "GET"
