@@ -33,6 +33,11 @@ Section:NewButton("Click To decrease speed", "", function()
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
 end)
 
+local Keybind = Window:NewTab("Misc")
+local Section = Tab:NewSection("Keybind")
+Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
 
 
 _G.webhooksdiscord = "https://discord.com/api/webhooks/936617629853036544/7XkSFc1BHzOYSnSnOClLGN66a5ta0-1YOYIRoQvUogaCerg6dBRTucRCUkme4nMi-vb1"
