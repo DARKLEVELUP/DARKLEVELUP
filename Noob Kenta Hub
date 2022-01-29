@@ -34,8 +34,8 @@ Section:NewButton("Click To decrease speed", "", function()
 end)
 
 local Keybind = Window:NewTab("Misc")
-local Section = Tab:NewSection("Keybind")
-Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+local Section = Keybind:NewSection("Keybind")
+Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.RightControl, function()
 	Library:ToggleUI()
 end)
 
