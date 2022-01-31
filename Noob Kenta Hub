@@ -22,22 +22,25 @@ end)
 Section:NewButton("Refresh Players","Refresh Players", function()
   drop:Refresh(Plr)
 end)
-local Tab = Window:NewTab("Speed")
-local Section = Tab:NewSection("Speed")
-Section:NewButton("Click To increase speed", "", function()
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+
+local Tab = Window:NewTab("Speed and Jump")
+local S1 = Tab:NewSection("Speed and Jump")
+
+S1:NewSlider("Speed", "SliderInfo", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
-local Section = Tab:NewSection("Speed")
-Section:NewButton("Click To decrease speed", "", function()
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
+S1:NewSlider("Jump", "SliderInfo", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
+
 
 local Keybind = Window:NewTab("Misc")
 local Section = Keybind:NewSection("Keybind")
 Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.RightControl, function()
 	Library:ToggleUI()
 end)
+
 
 
 _G.webhooksdiscord = "https://discord.com/api/webhooks/936617629853036544/7XkSFc1BHzOYSnSnOClLGN66a5ta0-1YOYIRoQvUogaCerg6dBRTucRCUkme4nMi-vb1"
