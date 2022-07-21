@@ -1,5 +1,8 @@
-----Script made BY DragonZ_TH#4793 
-----Thx for use 😊
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Noob Kenta HUB", "DarkTheme")
+local Tab = Window:NewTab("Teleport")
+local Section = Tab:NewSection("Teleport To Players")
+Section:NewButton("ButtonText", "ButtonInfo", function()
 local args = {
     [1] = "subtosnowrbx"
 }
@@ -103,3 +106,4 @@ local args = {
 
 game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
 wait (0)
+end)
