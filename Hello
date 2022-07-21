@@ -1,3 +1,105 @@
-while wait(1) do
-	print("Nub Euro")
-end
+----Script made BY DragonZ_TH#4793 
+----Thx for use 😊
+local args = {
+    [1] = "subtosnowrbx"
+}
+
+game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
+wait(0)
+--------------------------------------------------------2
+local args = {
+    [1] = "CHALLENGEFIX"
+}
+
+game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
+wait (0)
+--------------------------------------------------------3
+local args = {
+    [1] = "TWOMILLION"
+}
+
+game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
+wait (0)
+--------------------------------------------------------4
+local args = {
+    [1] = "SORRYFORSHUTDOWN"
+}
+
+game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
+wait (0)
+--------------------------------------------------------5
+local args = {
+    [1] = "RELEASE"
+}
+
+game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
+wait(0)
+--------------------------------------------------------6
+local args = {
+    [1] = "KingLuffy"
+}
+
+game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
+wait (0)
+--------------------------------------------------------7
+local args = {
+    [1] = "TOADBOIGAMING"
+}
+
+game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
+wait (0)
+--------------------------------------------------------8
+local args = {
+    [1] = "GINYUFIX"
+}
+
+game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
+wait (0)
+--------------------------------------------------------9
+local args = {
+    [1] = "Cxrsed"
+}
+
+game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
+wait (0)
+--------------------------------------------------------10
+local args = {
+    [1] = "FictioNTheFirst"
+}
+
+game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
+wait (0)
+--------------------------------------------------------11
+local args = {
+    [1] = "SubToBlamspot"
+}
+
+game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
+wait (0)
+--------------------------------------------------------12
+local args = {
+    [1] = "SubToKelvingts"
+}
+
+game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
+wait (0)
+local args = {
+    [1] = "noclypso"
+}
+
+game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
+wait (0)
+--------------------------------------------------------
+local args = {
+    [1] = "DATAFIX"
+}
+
+game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
+wait (0)
+----------------------------------------------------------
+local args = {
+    [1] = "MARINEFORD"
+}
+
+game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
+wait (0)
