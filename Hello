@@ -1,8 +1,8 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Noob Kenta HUB", "DarkTheme")
-local Tab = Window:NewTab("Teleport")
-local Section = Tab:NewSection("Teleport To Players")
-Section:NewButton("ButtonText", "ButtonInfo", function()
+local Window = Library.CreateLib("Noob Kenta HUB", "Ocean")
+local Tab = Window:NewTab("Redeem Code")
+local Section = Tab:NewSection("Redeem Code")
+Section:NewButton("Redeem Code", "Redeem Code", function()
 local args = {
     [1] = "subtosnowrbx"
 }
