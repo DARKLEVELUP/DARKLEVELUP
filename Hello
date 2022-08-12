@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Noob Kenta HUB", "Ocean")
+local Window = Library.CreateLib("NBH Anime Adventure", "Ocean")
 local Tab = Window:NewTab("Redeem Code")
 local Section = Tab:NewSection("Redeem Code")
 Section:NewButton("Redeem Code", "Redeem Code", function()
