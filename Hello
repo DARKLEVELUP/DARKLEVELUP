@@ -94,3 +94,4 @@ local args = {
 
 game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
 wait (0)
+end)
