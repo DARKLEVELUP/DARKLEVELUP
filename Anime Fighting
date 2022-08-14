@@ -1,8 +1,7 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Anime Fighting Simulator INF MOENY", "Ocean")
-local Tab = Window:NewTab("TabName")
+local Window = Library.CreateLib("Anime Fighting Simulator OP", "Ocean")
+local Tab = Window:NewTab("ALL Script")
 local Section = Tab:NewSection("Inf")
-local replicated = game:GetService("ReplicatedStorage")
 Section:NewButton("INF MONEY", "ButtonInfo", function()
    local replicated = game:GetService("ReplicatedStorage")
 local multiplier = 15
