@@ -1,7 +1,7 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Anime Fighting Simulator INF MOENY", "Ocean")
 local Tab = Window:NewTab("TabName")
-local Section = Tab:NewSection("Section Name")
+local Section = Tab:NewSection("Inf")
 local replicated = game:GetService("ReplicatedStorage")
 Section:NewButton("INF MONEY", "ButtonInfo", function()
    local replicated = game:GetService("ReplicatedStorage")
@@ -16,6 +16,52 @@ while true do task.wait()
     end
 end
 end)
+
+Section:NewButton("ButtonText", "ButtonInfo", function()
+    local replicated = game:GetService('ReplicatedStorage')
+
+
+
+coroutine.wrap(function()
+
+  for i = 1,20000 do -- do howerver much you want
+
+    task.spawn(function()
+
+        replicated.RSPackage.Events.StatFunction:InvokeServer('Stat', 'Chakra')
+
+    end)
+
+  end
+
+end)()
+
+ 
+
+-- Customize how bad you want it to lag here
+
+for i = 1,1000 do
+
+    for i = 1,1000 do
+
+        for i = 1,10000 do
+
+        end
+
+    end
+
+end
+end)
+
+
+
+
+
+
+
+
+
+
 
 Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.RightControl, function()
 	Library:ToggleUI()
