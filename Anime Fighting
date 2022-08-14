@@ -1,0 +1,19 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("TITLE", "DarkTheme")
+local Tab = Window:NewTab("TabName")
+local Section = Tab:NewSection("Section Name")
+local replicated = game:GetService("ReplicatedStorage")
+Section:NewButton("ButtonText", "ButtonInfo", function()
+   local replicated = game:GetService("ReplicatedStorage")
+local multiplier = 15
+
+while true do task.wait()
+    for i = 1, multiplier do
+        task.spawn(function()
+          replicated.RSPackage.Events.GeneralFunction:InvokeServer("LotteryRandomDraw")
+          replicated.RSPackage.Events.GeneralEvent:FireServer("SpinFinished")
+        end)
+    end
+end
+end)
+
