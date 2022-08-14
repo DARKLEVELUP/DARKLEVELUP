@@ -17,7 +17,7 @@ while true do task.wait()
 end
 end)
 
-Section:NewButton("ButtonText", "ButtonInfo", function()
+Section:NewButton("Chakra", "ButtonInfo", function()
     local replicated = game:GetService('ReplicatedStorage')
 
 
@@ -53,6 +53,11 @@ for i = 1,1000 do
 end
 end)
 
+
+
+Section:NewButton("Auto Farm", "ButtonInfo", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Woutt/FludexHub/main/login.lua"))()
+end)
 
 
 
