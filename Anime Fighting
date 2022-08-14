@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Anime Fighting Simulator OP", "Ocean")
+local Window = Library.CreateLib("Anime Fighting Simulator OP", "GrapeTheme")
 local Tab = Window:NewTab("ALL Script")
 local Section = Tab:NewSection("Inf")
 Section:NewButton("INF MONEY", "ButtonInfo", function()
