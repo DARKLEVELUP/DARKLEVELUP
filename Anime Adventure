@@ -95,6 +95,23 @@ local args = {
 game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
 wait (0)
 end)
+--------------------------------------------------------------------------------------------------------
+local args = {
+    [1] = "FAIRY"
+}
+
+game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
+wait (0)
+end)
+
+
+
+
+
+
+
+
+
 ----Keybind-------
 Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.RightControl, function()
 	Library:ToggleUI()
