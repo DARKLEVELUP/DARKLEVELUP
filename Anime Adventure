@@ -3,6 +3,7 @@ local Window = Library.CreateLib("NBH Anime Adventure", "Ocean")
 local Tab = Window:NewTab("Redeem Code")
 local Section = Tab:NewSection("Redeem Code")
 Section:NewButton("Redeem Code", "Redeem Code", function()
+--------------------------------------------------------
 local args = {
     [1] = "subtosnowrbx"
 }
@@ -103,15 +104,6 @@ local args = {
 game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
 wait (0)
 end)
-
-
-
-
-
-
-
-
-
 ----Keybind-------
 Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.RightControl, function()
 	Library:ToggleUI()
