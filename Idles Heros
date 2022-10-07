@@ -1,0 +1,182 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
+local venyx = library.new("Idle Heroes Simulator", 5013109572)
+
+-- themes
+local themes = {
+Background = Color3.fromRGB(24, 24, 24),
+Glow = Color3.fromRGB(0, 0, 0),
+Accent = Color3.fromRGB(10, 10, 10),
+LightContrast = Color3.fromRGB(20, 20, 20),
+DarkContrast = Color3.fromRGB(14, 14, 14),  
+TextColor = Color3.fromRGB(255, 255, 255)
+}
+
+-- first page
+local page = venyx:addPage("Auto Farm", 5012544693)
+local page2 = venyx:addPage("Other", 5012544693)
+local page3 = venyx:addPage("Credit", 5012544693)
+local page4 = venyx:addPage("Misc", 5012544693)
+
+local section1 = page:addSection("Auto Farm")
+local section2 = page:addSection("Auto Upgrade")
+
+local othersection = page2:addSection("Auto Chest")
+local creditsection = page3:addSection("Main")
+local ToggleSection = page4:addSection("Hide UI")
+
+creditsection:addTextbox("Made By: Babyspiderman#2582", "", function(value, focusLost)
+if focusLost then
+    venyx:Notify("", value)
+end
+end)
+
+ToggleSection:addKeybind("Toggle Keybind", Enum.KeyCode.RightControl, function()
+venyx:toggle()
+end, function()
+end)
+
+othersection:addDropdown("Selected Chest", {"Wooden", "Silver", "Golden", "Legendary"}, function(text)
+    MyChest = text
+end)
+
+othersection:addToggle("Buy", nil, function(value)
+    _G.Chest = value
+    
+    function AutoChest()
+        local A_1 = MyChest
+        game:GetService("ReplicatedStorage").Packages["_Index"]["sleitnick_knit@1.4.7"].knit.Services.ChestService.RF.BuyChest:InvokeServer(A_1)
+    end
+end)
+
+othersection:addToggle("Auto Next Level", nil, function(value)
+    _G.NextLevel = value
+    
+    function AutoNextLevel()
+        for i,v in pairs(game:GetService("Workspace").Plots:GetChildren()) do
+            if v:FindFirstChild("Owner") then
+                if v.Owner.Value == game.Players.LocalPlayer then
+                    if v.Buttons:FindFirstChild("NextLevel") then
+                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Buttons.NextLevel.Touch.CFrame
+                    end
+                end
+            end
+        end
+    end
+end)
+
+section1:addToggle("Start Auto Farm", nil, function(value)
+    _G.Farm = value
+    
+    function AutoFarm()
+        for i,v in pairs(game:GetService("Workspace").Plots:GetChildren()) do
+            if v:FindFirstChild("Owner") then
+                if v.Owner.Value == game.Players.LocalPlayer then
+                    repeat wait()
+                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Enemy:FindFirstChildOfClass("Part").CFrame
+                        local A_1 = v.Enemy:FindFirstChildOfClass("Part")
+                        game:GetService("ReplicatedStorage").Packages["_Index"]["sleitnick_knit@1.4.7"].knit.Services.WeaponService.RE.Swing:FireServer(A_1)
+                    until not v.Parent or _G.Farm == false
+                end
+            end
+        end
+    end
+end)
+
+section2:addToggle("Auto Hire", nil, function(value)
+    _G.HireHero = value
+    
+    function AutoHire()
+        for i,v in pairs(game:GetService("Workspace").Main.Hire:GetChildren()) do
+            if v.Name == "_displayHero" then
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Head.CFrame
+                local A_1 = tostring(v.Head.Nametag.Subject.Text)
+                game:GetService("ReplicatedStorage").Packages["_Index"]["sleitnick_knit@1.4.7"].knit.Services.HeroService.RE.HireHero:FireServer(A_1)
+            end
+        end
+    end
+end)
+
+section2:addToggle("Auto Upgrade Heroes", nil, function(value)
+    _G.Upgrade = value
+    
+    function AutoUpgrade()
+        game:GetService("Players").LocalPlayer.PlayerGui.Main.Frames.BuyCoins.Visible = false
+        for i,v in pairs(game:GetService("Workspace").Plots:GetChildren()) do
+            if v:FindFirstChild("Owner") then
+                if v.Owner.Value == game.Players.LocalPlayer then
+                    for i, d in pairs(v.Heroes:GetChildren()) do
+                        local A_1 = tostring(d.Name)
+                        local A_2 = 0
+                        game:GetService("ReplicatedStorage").Packages["_Index"]["sleitnick_knit@1.4.7"].knit.Services.HeroService.RF.BuyLevel:InvokeServer(A_1, A_2)
+                    end
+                end
+            end
+        end
+    end
+end)
+
+-- second page
+local theme = venyx:addPage("Theme", 5012544693)
+local colors = theme:addSection("Colors")
+
+for theme, color in pairs(themes) do -- all in one theme changer, i know, im cool
+colors:addColorPicker(theme, color, function(color3)
+venyx:setTheme(theme, color3)
+end)
+end
+
+-- load
+venyx:SelectPage(venyx.pages[1], true)
+
+
+spawn(function()
+    while task.wait() do
+        pcall(function()
+            if _G.Farm then
+                AutoFarm()
+            end
+        end)
+    end
+end)
+
+spawn(function()
+    while task.wait(1) do
+        pcall(function()
+            if _G.HireHero then
+                AutoHire()
+            end
+        end)
+    end
+end)
+
+spawn(function()
+    while task.wait() do
+        pcall(function()
+            if _G.Upgrade then
+                AutoUpgrade()
+            elseif _G.Upgrade == false then
+                game:GetService("Players").LocalPlayer.PlayerGui.Main.Frames.BuyCoins.Visible = true
+            end
+        end)
+    end
+end)
+
+spawn(function()
+    while task.wait() do
+        pcall(function()
+            if _G.NextLevel then
+                AutoNextLevel()
+            end
+        end)
+    end
+end)
+
+spawn(function()
+    while task.wait(1) do
+        pcall(function()
+            if _G.Chest then
+                AutoChest()
+            end
+        end)
+    end
+end)
