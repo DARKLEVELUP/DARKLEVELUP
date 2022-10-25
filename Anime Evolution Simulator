@@ -89,7 +89,6 @@ local moblist
 local Window = Library:Window({Text = "Anime Evolution Simulator"})
  
 local main = Window:Tab({Text = "Main"})
-local credits = Window:Tab({Text = "Credits"})
  
 local farm = main:Section({Text = "Farming"})
 local buy = main:Section({Text = "Buy", Side = "Right"})
