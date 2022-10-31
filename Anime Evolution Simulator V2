@@ -541,11 +541,3 @@ spawn(function() -- sorry for dumb code but im honestly clueless because of the 
         pcall(destroyrunning)
     end
 end)
-
-
-
-local Tab4 = Window:MakeTab({
-	Name = "Credits",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
