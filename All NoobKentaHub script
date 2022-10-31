@@ -36,6 +36,6 @@ Section:NewButton("General Script", "", function()
 end)
 
 
-SectionKeybind:NewKeybind("RightShift_to_hide_UI", "KeybindInfo", Enum.KeyCode.RightShift, function()
+SectionKeybind:NewKeybind("RightControl_to_hide_UI", "KeybindInfo", Enum.KeyCode.RightControl, function()
 	Library:ToggleUI()
 end)
