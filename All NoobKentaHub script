@@ -6,9 +6,16 @@ local Keybind = Window:NewTab("Misc")
 local SectionKeybind = Keybind:NewSection("Keybind")
 
 
-Section:NewButton("Anime Evoulution", "", function()
+Section:NewButton("Anime Evoulution Simulator", "", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/DARKLEVELUP/DARKLEVELUP/main/Anime%20Evolution%20Simulator"))()
 end)
+
+
+
+Section:NewButton("Anime Evoulution Simulator V2", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/DARKLEVELUP/DARKLEVELUP/main/Anime%20Evolution%20Simulator%20V2"))()
+end)
+
 
 
 
