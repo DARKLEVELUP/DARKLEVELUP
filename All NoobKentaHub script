@@ -18,6 +18,13 @@ end)
 
 
 
+Section:NewButton("Anime Evoulution Simulator God Farm", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/DARKLEVELUP/DARKLEVELUP/main/Anime%20Evolution%20Simulator%20God%20Farm"))()
+end)
+
+
+
+
 
 Section:NewButton("Anime Fighting Simulator", "", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/DARKLEVELUP/DARKLEVELUP/main/Anime%20Fighting"))()
