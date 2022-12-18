@@ -43,9 +43,17 @@ end)
 
 
 
+Section:NewButton("+1 JUMP EVERY SECOND", "", function()
+    loadstring(game:HttpGet("https://github.com/DARKLEVELUP/DARKLEVELUP/blob/main/+1%20jump%20every%20second"))()
+end)
+
 Section:NewButton("General Script", "", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/DARKLEVELUP/DARKLEVELUP/main/General%20Script"))()
 end)
+
+
+
+
 
 
 SectionKeybind:NewKeybind("RightControl_to_hide_UI", "KeybindInfo", Enum.KeyCode.RightControl, function()
