@@ -5,6 +5,14 @@ local Section = Tab:NewSection("Script")
 local Keybind = Window:NewTab("Misc")
 local SectionKeybind = Keybind:NewSection("Keybind")
 
+Section:NewToggle("Auto +12 Wins", "ToggleInfo", function(t)
+_G.TPPlayer = t
+while _G.TPPlayer do wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(31492.1777, 66136.8906, 8183.59229, -0.995892704, -9.86276874e-08, 0.0905414075, -1.00287814e-07, 1, -1.37861047e-08, -0.0905414075, -2.28096813e-08, -0.995892704)  end
+end)
 
-Section:NewButton("+12", "", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(31484.4766, 66136.8906, 8169.92041, -0.0596170612, 5.51133787e-08, 0.998221338, 8.6337506e-09, 1, -5.46959491e-08, -0.998221338, 5.35758238e-09, -0.0596170612)end)
+local Keybind = Window:NewTab("Misc")
+local Section = Keybind:NewSection("Keybind")
+Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.RightControl, function()
+	Library:ToggleUI()
+end)
