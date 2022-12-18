@@ -1,0 +1,10 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Noob Kenta HUB", "GrapeTheme")
+local Tab = Window:NewTab("Script")
+local Section = Tab:NewSection("Script")
+local Keybind = Window:NewTab("Misc")
+local SectionKeybind = Keybind:NewSection("Keybind")
+
+
+Section:NewButton("+12", "", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(31484.4766, 66136.8906, 8169.92041, -0.0596170612, 5.51133787e-08, 0.998221338, 8.6337506e-09, 1, -5.46959491e-08, -0.998221338, 5.35758238e-09, -0.0596170612)end)
