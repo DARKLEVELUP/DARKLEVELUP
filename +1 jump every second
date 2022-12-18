@@ -11,8 +11,6 @@ while _G.TPPlayer do wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(31492.1777, 66136.8906, 8183.59229, -0.995892704, -9.86276874e-08, 0.0905414075, -1.00287814e-07, 1, -1.37861047e-08, -0.0905414075, -2.28096813e-08, -0.995892704)  end
 end)
 
-local Keybind = Window:NewTab("Misc")
-local Section = Keybind:NewSection("Keybind")
 Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.RightControl, function()
 	Library:ToggleUI()
 end)
