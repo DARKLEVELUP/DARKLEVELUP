@@ -1,3 +1,4 @@
-_G.Key = "7KFT9-448H6-B0VO9"
-_G.DiscordId = "584746644990459923"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Natsuhanaki/Royx_PC/main/loader.lua"))();
+local delay = 0 -- [sec] if your network so noob
+local url = "https://pastebin.com/raw/ZR6yzN0b"
+repeat wait() wait(delay) until game:IsLoaded()
+loadstring(game:HttpGet(url))()
